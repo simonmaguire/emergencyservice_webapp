@@ -1,0 +1,245 @@
+body {
+    font-family: "trebuchet ms", verdana, sans-serif;
+    font-size: 12px;
+    line-height: 1.5em;
+    color: #333;
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    }
+#navbar {
+    height: calc(100% - 45px);
+    width: 15%;
+    background: #333;
+    float: left;
+}
+
+#main {
+    height: calc(100% - 45px);
+    width: 85%;
+    background: #FFFFFF;
+    float: left;
+    }
+#container {
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    height: calc(100% - 80px);
+    width: 100%;
+    background: #FFFFFF;
+    }
+#containerL {
+    grid-column: 1;
+    border-right-style: ridge;
+    border-width: 2px;
+    border-color: rgb(202, 202, 202);
+    height: 100%;
+}
+#containerR {
+    grid-column: 2;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #333;
+    max-height: 100%;
+    overflow-y: scroll;
+}
+
+#containerR h3{
+    text-align: left;
+    margin : 10px;
+}
+
+#containerR h4{
+    text-align: left;
+    margin : 10px;
+    font-size: medium;
+    font-weight: normal;
+}
+#containerR h5{
+    text-align: left;
+    margin : 10px;
+    font-size: small;
+    font-weight: normal;
+}
+#chartborder{
+    border-style: ridge;
+    border-color: rgb(95, 95, 95);
+    border-width: 1px;
+    margin: 10px;
+}
+
+#reportH1{
+    background: rgb(69, 178, 241);
+    height: 40px;
+    width: calc(100% - 5px);
+    margin:0px;
+    padding-left: 5px;
+    padding-top: 1px;
+    color: white;
+    text-align: left;
+}
+#reportH2{
+    background: rgb(30, 147, 214);
+    height: 35px;
+    width: 100%;
+}
+#reportH2 ul{
+    margin:0px;
+    padding-left: 5px;
+    padding-top: 2px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-weight: bold;
+}
+#header {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 45px;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    padding-top: 0px;
+    margin:0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+#header h1 {
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #fff;
+    text-align: left;
+    padding-left: 10px;
+    }
+
+#upper_left_header{
+    height: 100%;
+    display: flex;
+}
+#logo{
+    height: 80%;
+    width: 50px;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+#header h3{
+    line-height: 100%;
+    padding-top: 0px;
+    margin-top: 15px;
+    float: left;
+    color: #fff;
+    font-size: x-small;
+}
+#header ul {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    color: #fff;
+    }
+#header ul h2{
+    font-size: 12px;
+    color: #fff;
+    text-align: right;
+    padding-right: 10px;
+    }
+
+#footer {
+    bottom : 0px;
+    height: 60px;
+    width: 100%;
+    background: #333;
+    color: white;
+}
+
+.column {
+    float: left;
+    }
+    
+p {
+    margin: 10px;
+}
+a:link {
+    text-decoration: none;
+    color: #000;
+}
+a:visited {
+    text-decoration: none;
+    border-bottom: 1px dotted #369;
+    color: #000;
+}
+a:hover, a:active {
+    text-decoration: none;
+    border-bottom: 1px solid #036;
+    color: #000;
+    }
+img {
+    border: 0;
+}
+    
+#DateSelector{
+    width: 75%;
+    margin: 15px;
+}
+#tab1{
+    float:left;
+    padding: 5px 10px 5px 10px;
+    background: rgb(199, 196, 199);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #tab2, #tab3, #tab4 {
+    float: left;
+    padding: 5px 10px 5px 10px;
+    background: rgb(199, 196, 199);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  #tab.active, #tab2.active, #tab3.active, #tab4.active {
+    background: rgb(140,140,140)
+  }
+  #tab1:hover, #tab2:hover, #tab3:hover, #tab4:hover {
+    background: rgb(141, 141, 141);
+  }
+  
+  #tab1Content, #tab2Content, #tab3Content, #tab4Content {
+    width: 100%;
+    height: 25px;
+    padding: 20px;
+    border: 1px solid rgb(0,0,0);
+    border-radius: 10px;
+    margin-top: 5px;
+  }
+  
+  #tab4Content {
+   display: block; 
+  }
+  
+  #tab2Content, #tab3Content, #tab1Content {
+   display: none; 
+  }
+
+
+   #tab1Content select, #tab2Content select, #tab3Content select, #tab4Content select {
+    margin-bottom: 2px;
+  }
+
+  #b_or_t_label, #b_or_t{
+      white-space: pre-wrap;
+      display: none;
+      margin:auto;
+  }
+  #bats_label, #bats{
+    display: block;
+    margin: auto;
+}
+
+  
+
